@@ -1,5 +1,5 @@
 $(document).on('pagebeforeshow', '#index', function(){       
-    $('#test').draggable().resizable();
+    $('#test').draggable()
 });
 
 
@@ -54,3 +54,8 @@ $.extend( proto, {
 });
 
 })( jQuery );
+
+function addIMG(){
+    $('#index').append('<div id="new" class="test"></div>')
+    $('#new').draggable()
+}
